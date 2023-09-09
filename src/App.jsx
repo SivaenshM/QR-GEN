@@ -60,10 +60,10 @@ const App = () => {
 
   return (
     <div className='input container'>
-      <h2 className='head'>QR CODE GENERATOR</h2>
+      <h2 className='head'>Colourful QR Code Generator</h2>
       <form onSubmit={handleSubmit}>
         <div className='form-grp'>
-          <label htmlFor='url'>Enter URL</label>
+          <label htmlFor='url'>Enter URL here</label>
           <input
             type='url'
             id='url'
@@ -75,20 +75,20 @@ const App = () => {
             onChange={(e) => SetURL(e.target.value)}
           />
           <div className='form-grp'>
-            <label htmlFor='size'>Select QR code Size</label>
+            <label htmlFor='size'>Desired QR code size </label>
             <select
               id='size'
               value={size}
               onChange={(e) => setSize(e.target.value)}
             >
-              <option value='400'>400X400</option>
-              <option value='500'>500X500</option>
-              <option value='600'>600X600</option>
-              <option value='700'>700X700</option>
+              <option value='400'>400 X 400</option>
+              <option value='500'>500 X 500</option>
+              <option value='600'>600 X 600</option>
+              <option value='700'>700 X 700</option>
             </select>
           </div>
           <div className='form-grp'>
-            <label htmlFor='format'>Select Format</label>
+            <label htmlFor='format'>File Format</label>
             <select
               id='format'
               value={format}
@@ -101,7 +101,7 @@ const App = () => {
             </select>
           </div>
           <div className='form-grp'>
-            <label htmlFor='clrDark'>QR Color</label>
+            <label htmlFor='clrDark'>Select the QR Code Color</label>
             <input
               type='color'
               id='clrDark'
@@ -110,7 +110,7 @@ const App = () => {
             />
           </div>
           <div className='form-grp'>
-            <label htmlFor='clrLight'>BG Color</label>
+            <label htmlFor='clrLight'>Background Color</label>
             <input
               type='color'
               id='clrLight'
@@ -142,7 +142,7 @@ const App = () => {
             className='button link'
             onClick={handleDownload}
           >
-            Download Image
+            Download File
           </button>
         </div>
       )}
